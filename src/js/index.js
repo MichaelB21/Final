@@ -1,37 +1,37 @@
 console.log("connected");
-const key = "450b08c9-d141-4659-899f-ec287f17ae9a";
+const key = "7d338618d7a681b99d8449aee6bb16e58f0677b9";
 
 const query = async function () {
     try { 
-        const response = await fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/historical&api_key=450b08c9-d141-4659-899f-ec287f17ae9a');
-        const data = await responseS
+        const response = await fetch(
+            'https://api.nomics.com/v1/markets?key=7d338618d7a681b99d8449aee6bb16e58f0677b9'
+            );
+        const data = await response.json();
         data.results.forEach((coins) => {
-            DOMSelectors.grid.insertAdjacentHTML(
-                "beforeend", 
-        //         '<h1 class="header">Cryptocurrency Coins</h1>
-        //         <h2class="Cost"> The Cost</h2>
-        //             <button class="btn-prev">Previous</button>
-        //                 <section class="coin-grid">
-        //                  <div class="coin-image"> 
-        //                   <div class="coin-image-front">
-        //                     <img 
-        //                       src="${coins.icon}" 
-        //                       alt=""
-        //                       class="coin-icon"
-        //                     /></div>
-        //                 <div class="coin-image-back">
-        //                     <h3 class="coin-image-header">${coins.name}</h3>
-        //                     <div class="price">
-        //                         <p class="${coins.priceUSD}"></p>
-        //                     </div>      
-        //                 </div>
-        //             </div>);
-        // })
-        console.log(data)
-    }catch (error) {
-        console.log(error)
-        alert(Error)
+            DOMSelectors.grid.insertAdjacentHTML;
+                ("beforeend", 
+                <div class="coin-icon">
+                    <div class="coin-icon-front">
+                        <img
+                            src="${coin.excahnge}"
+                            alt=""
+                            class="icon"
+                        />
+                    </div>
+                        <h3 class="movie-card-header">${coin.exchange}</h3>
+                    <div class="name">
+                        </div>
+                    <div class="cost">
+                        <p class="cost-name">Market Price</p>
+                        <p class="cost">${coin.market}</p>
+                    </div>
+                </div>
+                )},
+         console.log(coins))
+             } catch (error) {
+        console.log(error);
+        alert(Error);
     }
-}
-query();}   
- 
+};
+query(); 
+

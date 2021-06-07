@@ -1,11 +1,10 @@
 {
   "name": "quit",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build-prod":"parcel build src/index.html",
+    "build-prod": "parcel build src/index.html",
     "clean": "rm dist/bundle.js"
   },
   "author": "",
@@ -16,5 +15,17 @@
     "last 3 opera versions",
     "last 3 ios_saf versions",
     "last 3 safari versions"
-  ]
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelB21/Final.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/MichaelB21/Final/issues"
+  },
+  "homepage": "https://github.com/MichaelB21/Final#readme",
+  "description": ""
 }
